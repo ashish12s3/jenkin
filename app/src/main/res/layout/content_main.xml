@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.airetl.b0097565.poc.MainActivity"
+    tools:showIn="@layout/activity_main">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <WebView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/web"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/url"/>
+       <Button
+           android:id="@+id/go"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           android:text="go
+           "/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);"/>
+           />
+   </LinearLayout>
+</ScrollView>
